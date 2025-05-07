@@ -1,0 +1,263 @@
+/****************************************/
+/* Estilos Globais */
+/****************************************/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cinza claro de fundo */
+    color: #333; /* Preto para texto principal */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/****************************************/
+/* Cabeçalho */
+/****************************************/
+header {
+    background: #333; /* Preto */
+    color: #fff; /* Branco para texto no cabeçalho */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #c00000 3px solid; /* Vermelho para borda inferior */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #logo {
+    float: left;
+    height: 150px; /* Ajuste conforme necessário */
+    margin-right: 20px;
+    border-radius: 50%; /* Se o logo for circular */
+}
+
+header h1 {
+    float: left;
+    margin-top: 5px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/****************************************/
+/* Seção Hero */
+/****************************************/
+#hero {
+    min-height: 400px;
+    background: url('../assets/images/imagem7.jpg') no-repeat center center/cover; /* Imagem de fundo */
+    text-align: center;
+    color: #fff; /* Branco para texto sobre a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;    
+    color: #c00000;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;    
+    color: #000000;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #c00000; /* Vermelho */
+    color: #fff !important;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #a00000; /* Vermelho mais escuro no hover */
+}
+
+/****************************************/
+/* Seção de Serviços */
+/****************************************/
+#servicos {
+    padding: 40px 0;
+    background-color: #fff; /* Fundo branco para esta seção */
+}
+
+#servicos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.servico-item {
+    background: #f9f9f9; /* Cinza muito claro para cada item */
+    padding: 20px;
+    border: 1px solid #ddd; /* Borda cinza claro */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.servico-item img {
+    max-width: 100%;
+    height: 200px; /* Altura fixa para as imagens dos serviços */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.servico-item h3 {
+    color: #c00000; /* Vermelho para títulos dos serviços */
+    margin-bottom: 10px;
+}
+
+/****************************************/
+/* Seção Área de Atendimento */
+/****************************************/
+#area-atendimento {
+    padding: 40px 0;
+    background-color: #e9e9e9; /* Cinza um pouco mais escuro */
+    text-align: center;
+}
+
+#area-atendimento h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#area-atendimento p {
+    margin-bottom: 20px;
+}
+
+.img-responsive {
+    max-width: 70%; /* Ajuste para não ocupar a largura toda */
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/****************************************/
+/* Seção de Contato */
+/****************************************/
+#contato {
+    padding: 40px 0;
+    background-color: #333; /* Preto */
+    color: #fff; /* Branco para texto */
+    text-align: center;
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#contato a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+#contato .cta-button {
+    margin-top: 20px;
+}
+
+/****************************************/
+/* Rodapé */
+/****************************************/
+footer {
+    background: #222; /* Preto mais escuro */
+    color: #aaa; /* Cinza claro para texto do rodapé */
+    text-align: center;
+    padding: 20px 0;
+    border-top: #c00000 3px solid; /* Vermelho para borda superior */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/****************************************/
+/* Responsividade */
+/****************************************/
+@media(max-width: 768px){
+    header #logo,
+    header h1,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        padding-top: 10px;
+    }
+
+    #hero h2 {
+        font-size: 30px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .img-responsive {
+        max-width: 90%;
+    }
+}
+
